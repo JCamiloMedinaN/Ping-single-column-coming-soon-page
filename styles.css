@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    padding-top: 5rem;
+}
+
+.color-gray {
+    color: var(--Gray);
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.input-message{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-right: 2rem;
+}
+
+input {
+    padding: 0.8rem;
+    width: 20rem;
+    border-radius: 1rem;
+    border-color: var(--Gray);
+}
+
+button {
+    background-color: var(--Blue);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    height: 2.8rem;
+    width: 10rem;
+    margin-left: 1rem;
+    box-shadow:  5.5px 6.5px 3px #dddddd;
+    cursor: pointer;
+}
+
+.dashboard-img {
+    margin-top: 4rem;
+    max-width: 30rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    width: 10rem;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-color: var(--Gray);
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.icono:hover {
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+}
+
+.fa-brands {
+    color: var(--Blue);
+    padding: 0.9rem 0.6rem;
+}
+
+.fa-brands:hover {
+    color: var(--white);
+}
+
+.copyright {
+    color: var(--Gray);
+    font-size: 14px;
+}
+
+.warnings {
+    display: flex;
+    justify-content: start;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    color: var(--Light-Red);
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media(max-width:375px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .subscribe{
+        font-size: 12px;
+    }
+
+    .input-message{
+        margin-right: 0rem;
+    }
+
+    input {
+        width: 18rem;
+        text-decoration: none;
+    }
+
+    button {
+        margin-top: 1rem;
+        width: 20rem;
+    }
+
+    input {
+        margin: 0;
+    }
+
+    button {
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .dashboard-img {
+        max-width: 20rem;
+    }
+
+    .warnings {
+        margin-left: 2rem;
+    }
+}
